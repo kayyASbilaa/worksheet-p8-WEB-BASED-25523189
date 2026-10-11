@@ -50,5 +50,3 @@ Declaration of Work
 Self-authored: HTML layout structure, CSS styling, local folder setup, script integration, and step-by-step console verification via Live Server.
 
 AI Assistance: Used for double-checking ES6+ edge cases, syntax troubleshooting (404/path fixes), and refining worksheet documentation phrasing.
-
-nih dh oke belum?
