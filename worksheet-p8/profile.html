@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<html lang="id">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<title>My Personal Bookshelf</title>
+
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+
+
+<body>
+
+<header>
+
+    <h1>My Personal Bookshelf</h1>
+
+    <nav aria-label="Main navigation">
+
+        <a href="#book-collection">Book Collection</a>
+
+        <a href="#book-categories">Book Categories</a>
+
+        <a href="#add-book">Add Book</a>
+
+    </nav>
+
+</header>
+
+<main>
+
+    <section id="book-collection">
+
+        <h2>My Personal Book Collection</h2>
+
+        <p>
+            Welcome to my personal bookshelf.
+            This page contains several books from my personal
+            collection, including books about self-development
+            and classic fiction.
+        </p>
+
+        <figure>
+
+            <img 
+                src="bookshelf.jpeg"
+                alt="A neatly organized wooden bookshelf filled with various hardcover and paperback books."
+                width="640"
+                height="360"
+                loading="lazy"
+            >
+
+            <figcaption>
+                My personal bookshelf collection at home.
+            </figcaption>
+
+        </figure>
+
+        <table border="1" cellpadding="8">
+            <caption> Personal Book Collection List
+     </caption>
+            <caption>
+
+            <thead>
+
+                <tr>
+
+                    <th scope="col">No.</th>
+
+                    <th scope="col">Title</th>
+
+                    <th scope="col">Author</th>
+
+                    <th scope="col">Genre</th>
+
+                    <th scope="col">Reading Status</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <th scope="row">1</th>
+
+                    <td>Atomic Habits</td>
+
+                    <td>James Clear</td>
+
+                    <td>Self-Development</td>
+
+                    <td>Completed</td>
+
+                </tr>
+
+                <tr>
+
+                    <th scope="row">2</th>
+
+                    <td>To Kill a Mockingbird</td>
+
+                    <td>Harper Lee</td>
+
+                    <td>Classic Fiction</td>
+
+                    <td>Reading</td>
+
+                </tr>
+
+                <tr>
+
+                    <th scope="row">3</th>
+
+                    <td>The Art of Noticing</td>
+
+                    <td>Lalena</td>
+
+                    <td>Self-Development</td>
+
+                    <td>Plan to Read</td>
+
+                </tr>
+
+                <tr>
+
+                    <th scope="row">4</th>
+
+                    <td>Is it Better to speak or die?</td>
+
+                    <td>Kathrina</td>
+
+                    <td>Self-Development</td>
+
+                    <td>Reading</td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+
+    <section id="book-categories">
+
+        <h2>Book Categories</h2>
+
+        <p>
+            The books in my personal collection are divided
+            into several categories. Each category has its own
+            characteristics and provides a different reading
+            experience.
+        </p>
+
+        <h3>Self-Development</h3>
+
+        <p>
+            <strong>Self-Development</strong> books focus on
+            personal growth, self-improvement, motivation,
+            productivity, and building positive habits.
+            These books can help readers develop themselves
+            and improve their daily lives.
+        </p>
+
+        <p>
+            <strong>Atomic Habits</strong>,
+            <strong>The Art of Noticing</strong>, and
+            <strong>Is it Better to speak or die?</strong>
+            are included in this category in my collection.
+        </p>
+
+
+        <h3>Classic Fiction</h3>
+
+        <p>
+            <strong>Classic Fiction</strong> books contain
+            fictional stories that have remained popular
+            and meaningful over time. These books often
+            discuss human relationships, society, morality,
+            and different aspects of life.
+        </p>
+
+        <p>
+            <strong>To Kill a Mockingbird</strong> by
+            Harper Lee is one of the classic fiction books
+            in my personal collection.
+        </p>
+
+
+        <h3>Other Books</h3>
+
+        <p>
+            <strong>Other Books</strong> is a category for
+            books that do not directly belong to the
+            Self-Development or Classic Fiction categories.
+            This category can contain books with different
+            genres, topics, and purposes.
+        </p>
+
+        <p>
+            I can add more books to this category in the
+            future as my personal bookshelf collection grows.
+        </p>
+
+    </section>
+
+
+    <section id="add-book">
+
+        <h2>Add New Book</h2>
+
+        <p>
+            Use the form below to record a new book that
+            you want to add to your personal bookshelf.
+        </p>
+
+        <form action="save" method="post">
+
+            <p>
+
+                <label for="book-title">
+                    Book Title:
+                </label>
+
+                <br>
+
+                <input
+                    type="text"
+                    id="book-title"
+                    name="book-title"
+                    required
+                >
+
+            </p>
+
+            <p>
+
+                <label for="author-name">
+                    Author Name:
+                </label>
+
+                <br>
+
+                <input
+                    type="text"
+                    id="author-name"
+                    name="author-name"
+                    required
+                >
+
+            </p>
+
+            <p>
+
+                <label for="reading-status">
+                    Reading Status:
+                </label>
+
+                <br>
+
+                <select
+                    id="reading-status"
+                    name="reading-status"
+                    required
+                >
+
+                    <option value="">
+                        -- Select Status --
+                    </option>
+
+                    <option value="unread">
+                        Plan to Read
+                    </option>
+
+                    <option value="reading">
+                        Reading
+                    </option>
+
+                    <option value="completed">
+                        Completed
+                    </option>
+
+                </select>
+
+            </p>
+
+            <button type="submit">
+                Save
+            </button>
+
+        </form>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        Faizah Nabila Azzahra · 25523189 · 2026
+    </p>
+
+</footer>
+
+    <script type="module" src="js/app.js"></script>
+</body>
+
+</html>
